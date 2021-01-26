@@ -1,0 +1,45 @@
+.bgColorOne {
+  background-color: #25293e;
+}
+#title {
+  letter-spacing: 15px;
+  font-weight: bold;
+  color: white;
+}
+.subTitle {
+  letter-spacing: 6.5px;
+}
+
+#intro {
+  background-color: #25293e;
+  color: white;
+}
+.myButton {
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 10%;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.spinnerOne {
+  position: relative;
+  right: 10%;
+  top: 20%;
+  animation: spin 15s linear infinite;
+}
+
+.spinnerOne img {
+  height: 2rem;
+  width: 2rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
