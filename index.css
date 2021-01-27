@@ -43,3 +43,38 @@
     transform: rotate(360deg);
   }
 }
+
+.square-effect {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  animation: spin 25s infinite ease;
+  z-index: 0;
+}
+
+.square-effect-1 {
+  height: 50px;
+  width: 50px;
+  border: 5px solid palevioletred;
+}
+
+#circle {
+  border-radius: 50%;
+  background-color: red;
+}
+
+.triangle-effect {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  animation: spin 25s infinite ease;
+  z-index: 0;
+}
+
+.triangle-effect-2 {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f7cd2e;
+}
