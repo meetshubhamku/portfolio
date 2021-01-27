@@ -47,6 +47,7 @@
   left: 15%;
   top: 25%;
   animation: spin 15s linear infinite;
+  z-index: 0;
 }
 
 .spinnerOne img {
