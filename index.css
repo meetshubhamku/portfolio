@@ -1,6 +1,20 @@
 .bgColorOne {
   background-color: #25293e;
 }
+
+.fgColorOne {
+  color: #25293e;
+}
+
+.fontOne {
+  font-family: "Playfair Display", serif;
+}
+.fontTwo {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+/* ------------------------------------Intro section------------------------------------ */
+
 #title {
   letter-spacing: 15px;
   font-weight: bold;
@@ -17,16 +31,16 @@
 .myButton {
   padding: 10px 15px;
   background-color: white;
-  border-radius: 10%;
+  border-radius: 7%;
   letter-spacing: 5px;
   font-weight: bold;
   margin-top: 7px;
 }
 
 .spinnerOne {
-  position: relative;
-  right: 10%;
-  top: 20%;
+  position: absolute;
+  left: 15%;
+  bottom: 15%;
   animation: spin 15s linear infinite;
 }
 
@@ -78,3 +92,17 @@
   border-right: 20px solid transparent;
   border-top: 20px solid #f7cd2e;
 }
+
+/* ------------------------------------Intro section Ends------------------------------------ */
+
+/* ------------------------------------Bio section------------------------------------ */
+#profilePic {
+  height: 150px;
+  width: 150px;
+}
+
+#description {
+  line-height: 1cm;
+}
+
+/* ------------------------------------Bio section Ends------------------------------------ */

@@ -25,10 +25,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <!-- NavBar -->
+    <!-- *********************NavBar********************* -->
     <header class="bgColorOne" style="padding-left: 10%; padding-right: 10%">
       <nav class="navbar navbar-expand-lg navbar-light bgColorOne">
         <a class="navbar-brand text-white font-weight-bold" href="#"
@@ -58,10 +67,10 @@
         </div>
       </nav>
     </header>
-    <!-- NavBar Ends -->
+    <!-- *********************NavBar Ends********************* -->
 
-    <!-- Intro Section -->
-    <div class="container-fluid pl-5 pr-5" id="intro">
+    <!-- *********************Intro Section********************* -->
+    <div class="container-fluid pl-4 pr-4" id="intro">
       <div class="spinnerOne">
         <img src="./assets/circleImageOne.png" alt="" />
       </div>
@@ -78,10 +87,10 @@
           style="height: 90vh"
         >
           <div class="container">
-            <h4 class="subTitle">Hello Everyone</h4>
-            <h1 id="title">I'am Shubham</h1>
-            <h4 class="subTitle">Web Developer</h4>
-            <button class="myButton">Know Me</button>
+            <h4 class="subTitle fontTwo">Hello Everyone</h4>
+            <h1 id="title" class="fontOne">I'am Shubham</h1>
+            <h4 class="subTitle fontTwo">Web Developer</h4>
+            <button class="myButton fontTwo">More About Me</button>
           </div>
         </div>
         <div
@@ -98,6 +107,35 @@
         </div>
       </div>
     </div>
-    <!-- Intro Section Ends -->
+    <!-- *********************Intro Section Ends********************* -->
+
+    <!-- *********************Brief Introduction  Section********************* -->
+    <div
+      class="container-fluid pt-5 pb-3 bgColorOne text-white pl-4 pr-5"
+      style="background-color: #f8f1f1"
+    >
+      <h1 class="text-center fontOne text-dark">Let Me Introduce Myself</h1>
+
+      <div class="container py-5">
+        <div class="row">
+          <div class="offset-lg-1 col-lg-4 text-center py-3">
+            <img src="./assets/profilepic.png" id="profilePic" alt="..." />
+          </div>
+          <div class="col-lg-6">
+            <p
+              class="text-white fontTwo text-dark text-justify"
+              id="description"
+            >
+              I am pursuing my Masters in Computer Application at ATSS's
+              Institute of Industrial and Computer Management and Research,
+              Nigdi which is affiliated to Savitribai Phule Pune University. I'm
+              also a hold certification like Microsoft Technology Associate and
+              Certified Ethical Hacker under my belt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *********************Brief Introduction  Section Ends********************* -->
   </body>
 </html>
