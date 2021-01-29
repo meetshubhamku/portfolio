@@ -375,7 +375,9 @@
       AOS.init();
 
       function stopLoader(){
-        document.getElementById("preloader").style.display="none";
+        setTimeout(function(){
+          document.getElementById("preloader").style.display="none";
+        },5000)
       }
 
     </script>
