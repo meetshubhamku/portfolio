@@ -35,15 +35,29 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
       rel="stylesheet"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="./index.css" />
 
-    <script>
-      
-    </script>
+    
   </head>
-  <body onload="">
+  <body onload="stopLoader();">
+    <!-- *********************loading page********************* -->
+    <div id="preloader">
+      <lottie-player
+            src="https://assets8.lottiefiles.com/packages/lf20_x62chJ.json"
+            background="transparent"
+            speed="1"
+            style="width: 500px; height: 500px"
+            loop
+            autoplay
+          ></lottie-player>
+    </div>
+    <!-- *********************loading page ends********************* -->
     <!-- *********************NavBar********************* -->
-    <header id="home" class="bgColorOne" style="padding-left: 10%; padding-right: 10%">
+    <header id="home" class="bgColorOne fontOne" style="padding-left: 10%; padding-right: 10%">
       <nav class="navbar navbar-expand-lg navbar-light bgColorOne">
         <a class="navbar-brand text-white font-weight-bold" href="#"
           >PortFolio</a
@@ -79,9 +93,7 @@
       </nav>
     </header>
     <!-- *********************NavBar Ends********************* -->
-    <!-- *********************Scroll button********************* -->
     
-    <!-- *********************Scroll button ends********************* -->
     <!-- *********************Intro Section********************* -->
     <div class="container-fluid pl-4 pr-4" id="intro">
       <div class="spinnerOne">
@@ -130,7 +142,9 @@
           class="offset-lg-1 col-lg-6 col-sm-12 d-flex justify-content-center align-items-center"
           style="height: 95vh"
         >
-          <div class="container">
+          <div class="container"
+          
+          >
             <h4 class="subTitle fontTwo my-2">Hello Everyone</h4>
             <h1 id="title" class="fontOne my-2">I'am Shubham</h1>
             <h4 class="subTitle fontTwo my-2">
@@ -139,7 +153,7 @@
               <span><i class="fa fa-code fa-1x text-warning aria-hidden="true"></i></span>
             </h4>
             
-            <a type="button" class="btn btn-outline-light fontTwo px-4 my-2">More About Me</a>
+            <a href="#about" class="btn btn-outline-light fontTwo px-4 my-2">More About Me</a>
           </div>
         </div>
         <div
@@ -161,7 +175,7 @@
     <div class="container-fluid pt-5 pb-5 bgColorTwo text-white" id="about">
       <h1 class="text-center fontOne text-dark">Let Me Introduce Myself</h1>
       <hr class="bg-dark" style="width: 35%;"></hr>
-      <div class="container py-5">
+      <div class="container py-5" data-aos="fade-up" data-aos-duration="2000" >
         <div class="row">
           <div class="offset-lg-1 col-lg-4 text-center py-3">
             <img src="./assets/profilepic.png" id="profilePic" alt="..." />
@@ -183,7 +197,7 @@
 
       <div class="container text-dark pt-1 pb-3">
         <div class="row">
-          <div class="col-lg-5 offset-lg-1 pt-1 pb-2">
+          <div class="col-lg-5 offset-lg-1 pt-1 pb-2" data-aos="fade-right" data-aos-duration="2000">
             <div>
               <h4 class="">Profile</h4>
               <p class="fontTwo">I'm a technology enthusiast and love to learn new things.</p>
@@ -199,28 +213,27 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 offset-lg-1  pt-1 pb-2">
+          <div class="col-lg-4 offset-lg-1  pt-1 pb-2" data-aos="fade-left" data-aos-duration="2000">
             <div class="progress my-2 " style="background-color: #d3e0ea; height: 30px;">
-              <div class="progress-bar bgColorThree" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Html</div>
+              <div class="progress-bar  bgColorThree" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Html</div>
             </div>
             <div class="progress my-2 " style="background-color: #d3e0ea; height: 30px;">
-              <div class="progress-bar bgColorThree" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
+              <div class="progress-bar  bgColorThree" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
             </div>
             <div class="progress my-2" style="background-color: #d3e0ea; height: 30px;">
-              <div class="progress-bar bgColorThree" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">SASS</div>
+              <div class="progress-bar  bgColorThree" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">SASS</div>
             </div>
             <div class="progress my-2 " style="background-color: #d3e0ea; height: 30px;">
-              <div class="progress-bar bgColorThree" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Sql</div>
+              <div class="progress-bar  bgColorThree" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Sql</div>
             </div>
             <div class="progress my-2" style="background-color: #d3e0ea; height: 30px;">
-              <div class="progress-bar bgColorThree" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">ExpressJs</div>
+              <div class="progress-bar  bgColorThree" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">ExpressJs</div>
             </div>
-            
           </div>
         </div>
       </div>
 
-      <div class="container text-center" >
+      <div class="container text-center">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-3 py-3">
             <img class="jump" src="https://img.icons8.com/color/75/000000/mongodb.png" />
@@ -264,12 +277,12 @@
       <div class="row">
         <div class="col-lg-4 col-sm-12 my-3 jump">
           <a
-            href="https://clever-nightingale-ad6f0c.netlify.app/"
-            target="_blank"
-            ><img
-              class="card-img-top"
-              src="./assets/tp.png"
-              alt="Card image cap"
+          href="https://clever-nightingale-ad6f0c.netlify.app/"
+          target="_blank"
+          ><img
+          class="card-img-top"
+          src="./assets/tp.png"
+          alt="Card image cap"
           /></a>
         </div>
         <div class="col-lg-4 col-sm-12 my-3 jump">
@@ -356,5 +369,15 @@
       </div>
     </footer>
     <!-- *********************Footer Section Ends********************* -->
+
+
+    <script>
+      AOS.init();
+
+      function stopLoader(){
+        document.getElementById("preloader").style.display="none";
+      }
+
+    </script>
   </body>
 </html>
