@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 .bgColorOne {
   background-color: #25293e;
 }
@@ -5,9 +9,18 @@
 .bgColorTwo {
   background-color: #f8f1f1;
 }
+.bgColorThree {
+  background-color: #19456b;
+}
+.bgColorFour {
+  background-color: #19162b;
+}
 
 .fgColorOne {
   color: #25293e;
+}
+.fgColorThree {
+  background-color: #19456b;
 }
 
 .fontOne {
@@ -15,6 +28,10 @@
 }
 .fontTwo {
   font-family: "Nanum Gothic", sans-serif;
+}
+
+.underline {
+  border-bottom: 3px solid white;
 }
 
 /* ------------------------------------Intro section------------------------------------ */
@@ -150,6 +167,21 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-25px);
+    transform: translateY(-15px);
   }
 }
+
+/* ------------------------------------footer section ------------------------------------ */
+
+.socials div {
+  padding: 9px 14px;
+  margin: 0px 3px;
+  border-radius: 20%;
+}
+.socials div i {
+  height: 20px;
+  width: 20px;
+  color: white;
+}
+
+/* ------------------------------------footer section Ends------------------------------------ */
