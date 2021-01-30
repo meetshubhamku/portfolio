@@ -41,16 +41,16 @@
   </head>
   <body onload="stopLoader();">
     <!-- *********************loading page********************* -->
-    <div id="preloader">
+    <!-- <div id="preloader">
       <lottie-player
-            src="https://assets8.lottiefiles.com/packages/lf20_x62chJ.json"
+            src="https://assets6.lottiefiles.com/private_files/lf30_ufc6zoq6.json"
             background="transparent"
             speed="1"
             style="width: 500px; height: 500px"
             loop
             autoplay
           ></lottie-player>
-    </div>
+    </div> -->
     <!-- *********************loading page ends********************* -->
     <!-- *********************NavBar********************* -->
     <header id="home" class="bgColorOne" style="padding-left: 10%; padding-right: 10%">
@@ -148,6 +148,8 @@
             <a href="./assets/Shubham's Resume.pdf" target="_blank" download class="btn btn-outline-light px-4 my-2">Download CV</a>
           </div>
         </div>
+        
+        
         <div
           class="col-lg-4 col-sm-12 d-flex justify-content-center align-items-center"
         >
@@ -266,8 +268,17 @@
     <div class="container-fluid bgColorOne pt-5 pl-5 pr-5 pb-5" id="work">
       <h1 class="fontOne text-light text-center mb-3">Some Of My Work</h1>
       <hr class="bg-white" style="width: 30%;"></hr>
+      <div class="container ">
+        <div class="col-lg-12 col-md-12 col-sm-12 mx-auto text-center">
+          <button class="btn btn-outline-light mx-1 filter-button" data-filter="all">All</button>
+          <button class="btn btn-outline-light mx-1 filter-button" data-filter="clientWork">Client Work</button>
+          <button class="btn btn-outline-light mx-1 filter-button" data-filter="react">React</button>
+          
+        </div>
+        
+      </div>
       <div class="row">
-        <div class="col-lg-4 col-sm-12 my-3 jump">
+        <div class="col-lg-4 col-sm-12 my-3 jump filter clientWork">
           <a
           href="https://clever-nightingale-ad6f0c.netlify.app/"
           target="_blank"
@@ -277,7 +288,7 @@
           alt="Card image cap"
           /></a>
         </div>
-        <div class="col-lg-4 col-sm-12 my-3 jump">
+        <div class="col-lg-4 col-sm-12 my-3 jump filter react">
           <a href="https://mefoodie.netlify.app" target="_blank">
             <img
               class="card-img-top"
@@ -285,7 +296,7 @@
               alt="Card image cap"
           /></a>
         </div>
-        <div class="col-lg-4 col-sm-12 my-3 jump">
+        <div class="col-lg-4 col-sm-12 my-3 jump filter react">
           <a href="https://tictactoegameforus.netlify.app" target="_blank"
             ><img
               class="card-img-top"
@@ -293,7 +304,7 @@
               alt="Card image cap"
           /></a>
         </div>
-        <div class="col-lg-4 col-sm-12 my-3 jump">
+        <div class="col-lg-4 col-sm-12 my-3 jump filter clientWork">
           <a href="https://surya-foundation.com/" target="_blank"
             ><img
               class="card-img-top"
@@ -301,7 +312,7 @@
               alt="Card image cap"
           /></a>
         </div>
-        <div class="col-lg-4 col-sm-12 my-3 jump">
+        <div class="col-lg-4 col-sm-12 my-3 jump filter clientWork">
           <a href="https://pinnaclehealthcare.netlify.app" target="_blank"
             ><img
               class="card-img-top"
@@ -369,6 +380,20 @@
           document.getElementById("preloader").style.display="none";
         },5000)
       }
+
+
+      $(document).ready(function(){
+        $(".filter-button").click(function(){
+          var value = $(this).attr('data-filter');
+          if(value=="all"){
+            $('.filter').show('1000');
+          }else{
+            $('.filter').not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+          }
+        })
+      })
+
     </script>
   </body>
 </html>
